@@ -10,7 +10,9 @@
 
 .header {
 	padding: 40px 20px;
-	background: $overlay-background-color;
+	// background: $overlay-background-color;
+	background-color: #FFF;
+	color: #181716;
 
 	@include mq(tabletp) {
 		padding: 80px 40px;
@@ -29,6 +31,9 @@
 
 	@include mq(desktop) {
 		width: 25%;
+		justify-content: center;
+    	flex-direction: column;
+		display: flex;
 	}
 }
 
@@ -75,11 +80,12 @@
 }
 
 .header__content {
+	width: 100%;
 	position: relative;
 
 	@include mq(tabletl) {
-		position: absolute;
-		bottom: 0;
+		// position: absolute;
+		// bottom: 0;
 		padding: 40px 40px 34px;
 	}
 
@@ -110,10 +116,10 @@
 	font-weight: $sitetitle-weight;
 	letter-spacing: $sitetitle-spacing;
 	line-height: 1;
-	color: $overlay-text-color;
+	// color: $overlay-text-color;
 
 	&:hover {
-		color: $overlay-text-color;
+		color: currentColor;
 	}
 
 	@include mq(tabletp) {
@@ -123,6 +129,11 @@
 	@include mq(laptop) {
 		font-size: $sitetitle-large;
 	}
+}
+
+.header__img {
+	width: 100%;
+	display: block;
 }
 
 .header__tagline {
@@ -274,7 +285,7 @@
 .menu__list__item__link {
 	font-size: $menu-small;
 	font-weight: $menu-weight;
-	color: rgba($overlay-text-color, 0.7);
+	// color: rgba($overlay-text-color, 0.7);
 	padding: 10px 0;
 
 	&:hover {

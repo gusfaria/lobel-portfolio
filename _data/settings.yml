@@ -65,7 +65,7 @@ color_settings:
   accent_color: '#A2DED0'
   border_color: '#dddddd'
   overlay_background_color: '#161B21'
-  overlay_text_color: '#ffffff'
+  overlay_text_color: '#000'
   error_color: '#D64541'
 
 font_settings:
@@ -89,8 +89,8 @@ font_settings:
     line_height: 1.5
   menu:
     small_size: 30
-    medium_size: 17
-    large_size: 18
+    medium_size: 28
+    large_size: 24
     weight: 400
     letter_spacing: 0
   h1:
