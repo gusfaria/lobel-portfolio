@@ -5,20 +5,28 @@ layout: default
 <section class="intro">
 
 	<div class="wrap">
+		{% if page.about %}
+			<div class="about-container">
+				<h1>{{ page.title }}</h1>
 
-		<h1>{{ page.title }}</h1>
-		<p>{{ page.subtitle }}</p>
+				<h3 class="about_bio">
+					I'm an <b>Assistant Professor</b> of Economics at the University of Nottingham and Research Associate at the Institute for Fiscal Studies. My research focuses on Public Economics.
+				</h3>
+			</div>
 
+		{% else %}
+			<h1>{{ page.title }}</h1>
+			<p>{{ page.subtitle }}</p>
+
+			<section class="single">
+
+				<div class="wrap">
+
+					{{ page.content }}
+
+				</div>
+
+			</section>
+		{% endif %}
 	</div>
-
-</section>
-
-<section class="single">
-
-	<div class="wrap">
-
-		{{ page.content }}
-
-	</div>
-
 </section>

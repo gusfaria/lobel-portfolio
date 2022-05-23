@@ -132,8 +132,12 @@
 }
 
 .header__img {
+	display: none;
 	width: 100%;
-	display: block;
+
+	@include mq(tabletl) {
+		display: block;
+	}
 }
 
 .header__tagline {

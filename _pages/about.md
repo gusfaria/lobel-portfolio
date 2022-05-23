@@ -1,16 +1,14 @@
 ---
-title: About Journal
-subtitle: A stunning personal blog Jekyll theme with an image-focused design.
-description: A stunning personal blog Jekyll theme with an image-focused design.
-featured_image: /images/demo/demo-portrait.jpg
+title: Welcome!
+# subtitle: A stunning personal blog Jekyll theme with an image-focused design.
+# description: A stunning personal blog Jekyll theme with an image-focused design.
+about: true
 ---
+<!-- ## Features
 
-![](/images/demo/demo-landscape.jpg)
+Journal is packed with powerful features to showcase your work: -->
 
-## Features
-
-Journal is packed with powerful features to showcase your work:
-
+<!--
 * Beautiful, minimal design
 * Fixed sidebar images that animate as you browse
 * Single column post layout
@@ -32,4 +30,4 @@ Journal is packed with powerful features to showcase your work:
 
 Journal is created and supported by [Jekyll Themes](https://jekyllthemes.io), and is available for $49.
 
-<a href="https://jekyllthemes.io/theme/journal-personal-jekyll-theme" class="button button--large">Get This Theme</a>
+<a href="https://jekyllthemes.io/theme/journal-personal-jekyll-theme" class="button button--large">Get This Theme</a -->
