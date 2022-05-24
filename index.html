@@ -10,25 +10,61 @@ featured_image: /images/demo/demo-landscape.jpg
 	<div class="wrap">
 
 		{% for post in paginator.posts %}
+		<article class="proj-card">
+			<header class="proj-card__item proj-head">
+				<div class="proj-head__eyebrows">
+					<div class="proj-label">Published</div>
+					<div class="proj-label proj-label--light">Microeconomics</div>
+				</div>
 
-		<article class="blog-post">
+				<h2 class="proj-head__title">
+					<a href="{{ post.url | relative_url }}">{{ post.title }}</a>
+				</h2>
+
+				<div class="proj-head__meta">
+					<p class="proj-meta__item proj-byline">
+						with <b>Felipe Lobel</b>, <b>John Doe</b>, <b>Mary Jane</b>
+					</p>
+					<p class="proj-meta__item proj-publication">
+						<b>THE ECONOMIST</b> | November 24, 2018
+					</p>
+				</div>
+			</header>
+
+			<figure class="proj-card__item proj-thumbnail">
+				<img src="/images/demo/demo-landscape.jpg" alt=""/>
+			</figure>
+
+			<div proj-card__item >
+				<div class="proj-excerpt">
+					<p>{{ post.excerpt }}</p>
+				</div>
+
+				<ul class="proj-links">
+					<li class="proj-link__item"><a class="" href="#" target="_blank">Project version</a></li>
+					<li class="proj-link__item"><a class="" href="#" target="_blank">Appendix</a></li>
+					<li class="proj-link__item"><a class="" href="#" target="_blank">Replication code</a></li>
+				</ul>
+			</div>
+		</article>
+		<!-- <article class="blog-post">
 
 			<div class="blog-post__header">
 				<h2 class="blog-post__title"><a href="{{ post.url | relative_url }}">{{ post.title }}</a></h2>
 				<p class="blog-post__subtitle">{{ post.date | date_to_long_string }}</p>
 			</div>
 
-			<!-- {% if post.featured_image %}
+			{% if post.featured_image %}
 			<a href="{{ post.url | relative_url }}" class="blog-post__image" style="background-image: url({{ post.featured_image | relative_url }});"></a>
-			{% endif %} -->
+			{% endif %}
 
 			<div class="blog-post__content">
 				<p>{{ post.excerpt }}</p>
 				<p><a href="{{ post.url | relative_url }}" class="button">Read More</a>
 			</div>
 
-		</article>
 
+		</article> -->
 		{% endfor %}
 
 	</div>
