@@ -1,10 +1,9 @@
 ---
 layout: default
-title: Projects
-subtitle: What I've been working on lately.
-description: Journal is a stunning personal blog Jekyll theme with an image-focused design.
+title: Research ?
+subtitle: What I've been working on lately. dasdsads.
+description: Journal is a stunning personal blog Jekyll theme with an image-focused design.a asasas
 featured_image: /images/demo/demo-landscape.jpg
-
 ---
 
 <section class="intro">
@@ -18,7 +17,19 @@ featured_image: /images/demo/demo-landscape.jpg
 
 </section>
 
-<section class="portfolio">
+
+<div class="wrap">
+	Here:
+	{% for research in site.researches %}
+		<h1>{{ research.title }}</h1>
+		<!-- {% for card in research.list %}
+			<p>{card.title}</p>
+		{% endfor %} -->
+	{% endfor %}
+</div>
+
+
+<!-- <section class="portfolio">
 
 	<div class="wrap">
 
@@ -45,4 +56,4 @@ featured_image: /images/demo/demo-landscape.jpg
 
 	</div>
 
-</section>
+</section> -->

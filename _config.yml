@@ -1,7 +1,7 @@
 site: Felipe Lobel
 
-url:
-baseurl:
+url: felipelobel.github.io
+baseurl: /
 
 collections:
   pages:
@@ -13,6 +13,9 @@ collections:
   projects:
     output: true
     permalink: /project/:slug
+  Researches:
+    output: true
+    permalink: /research/:slug
 
 defaults:
   -
@@ -38,6 +41,12 @@ defaults:
       type: "projects"
     values:
       layout: "project"
+  -
+    scope:
+      path: ""
+      type: "researches"
+    values:
+      layout: "research"
 
 markdown: kramdown
 
