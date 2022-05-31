@@ -1,7 +1,11 @@
 site: Felipe Lobel
 
-url: felipelobel.github.io
-baseurl: /
+domain: gusfaria.github.io       # if you want to force HTTPS, specify the domain without the http at the start, e.g. example.com
+url: https://gusfaria.github.io  # the base hostname and protocol for your site, e.g. http://example.com
+baseurl: /lobel-portfolio/      # place folder name if the site is served in a subfolder
+
+# url:
+# baseurl:
 
 collections:
   pages:
@@ -9,13 +13,13 @@ collections:
     permalink: /:name
   posts:
     output: true
-    permalink: /blog/:slug
+    permalink: /blog/:collection
   projects:
     output: true
-    permalink: /project/:slug
+    permalink: /project/:collection
   Researches:
     output: true
-    permalink: /research/:slug
+    permalink: /research/:collection
 
 defaults:
   -
