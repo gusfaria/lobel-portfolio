@@ -3,8 +3,12 @@
 // Single page/post/project
 
 // - - - - - - - - - - - - - - - - - -
+.slide {
+	min-height: 100vh;
+}
 
 .intro {
+	height: 100vh;
 	margin-top: 0;
 	padding: 20px 0 0;
 
@@ -34,9 +38,9 @@
 			max-width: 70%;
 		}
 	}
-	
+
 	h1 {
-		
+
 		@include mq(tabletp) {
 			white-space: pre-line;
 		}
@@ -227,7 +231,7 @@
 				padding: 20px;
 			}
 		}
-		
+
 		tr {
 
 			&:nth-child(2n) {
@@ -291,7 +295,7 @@
 					text-align: center;
 					color: $text-light-color;
 				}
-				
+
 				p {
 					display: inline;
 					max-width: 100%;

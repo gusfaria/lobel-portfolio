@@ -10,16 +10,12 @@ header_settings:
 
 menu_settings:
   menu_items:
-    - title: 'Latest'
-      url: '/'
-    - title: 'Projects'
-      url: '/projects/'
     - title: 'About'
-      url: '/about'
-    - title: 'Contact'
-      url: '/contact'
-    - title: 'Research'
-      url: '/research'
+      url: '#about'
+    - title: 'Working Papers'
+      url: '#working-papers'
+    - title: 'Work in Progress'
+      url: '#work-in-progress'
 
 grid_settings:
   grid_spacing: 10

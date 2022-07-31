@@ -3,7 +3,7 @@ layout: default
 title: Research
 subtitle: What I've been working on lately. ?
 description: Journal is a stunning personal blog Jekyll theme with an image-focused design.a asasas
-featured_image: /images/demo/demo-landscape.jpg
+featured_image: ./../images/demo/demo-landscape.jpg
 ---
 
 <section class="intro">
@@ -19,7 +19,6 @@ featured_image: /images/demo/demo-landscape.jpg
 
 <div class="wrap">
 	{% for research in site.projects %}
-
 		<h1>{{ research.title }}</h1>
 		{% for paper in research.papers %}
 			<article class="proj-card">
