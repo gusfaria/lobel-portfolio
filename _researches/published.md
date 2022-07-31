@@ -5,6 +5,14 @@ date: 2018-06-30 00:00:00
 featured_image: '/images/demo/demo-square.jpg'
 byline: "Yello world"
 
+
+papers:
+    - hello-world
+    - introduction
+    - basic-concepts
+    - advanced-concepts
+
+
 # list:
 # 	- title: Slide one
 # 	desc: |

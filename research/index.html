@@ -1,7 +1,7 @@
 ---
 layout: default
-title: Research ?
-subtitle: What I've been working on lately. dasdsads.
+title: Research
+subtitle: What I've been working on lately. ?
 description: Journal is a stunning personal blog Jekyll theme with an image-focused design.a asasas
 featured_image: /images/demo/demo-landscape.jpg
 ---
@@ -17,14 +17,51 @@ featured_image: /images/demo/demo-landscape.jpg
 
 </section>
 
-
 <div class="wrap">
-	Here:
-	{% for research in site.researches %}
+	{% for research in site.projects %}
+
 		<h1>{{ research.title }}</h1>
-		<!-- {% for card in research.list %}
-			<p>{card.title}</p>
-		{% endfor %} -->
+		{% for paper in research.papers %}
+			<article class="proj-card">
+				<header class="proj-card__item proj-head">
+					<div class="proj-head__eyebrows">
+						<div class="proj-label">Published</div>
+						<div class="proj-label proj-label--light">Microeconomics</div>
+					</div>
+
+					<h2 class="proj-head__title">
+						<a href="{{paper.link}}" target="_blank">{{ paper.title }}</a>
+					</h2>
+
+					<div class="proj-head__meta">
+						<p class="proj-meta__item proj-byline">
+							{{ paper.byline }}
+						</p>
+
+						<p class="proj-meta__item proj-publication">
+							<b>THE ECONOMIST</b> | November 24, 2018
+						</p>
+					</div>
+				</header>
+
+				<figure class="proj-card__item proj-thumbnail">
+					<img src="./../images/demo/demo-landscape.jpg" alt=""/>
+				</figure>
+
+				<div proj-card__item >
+					<div class="proj-excerpt">
+						<p>{{ paper.excerpt }}</p>
+					</div>
+
+					<ul class="proj-links">
+						<li class="proj-link__item"><a class="" href="#" target="_blank">Project version</a></li>
+						<li class="proj-link__item"><a class="" href="#" target="_blank">Appendix</a></li>
+						<li class="proj-link__item"><a class="" href="#" target="_blank">Replication code</a></li>
+					</ul>
+				</div>
+			</article>
+
+		{% endfor %}
 	{% endfor %}
 </div>
 
