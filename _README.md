@@ -8,6 +8,11 @@ If you have any questions or feedback about the theme, don't hesitate to reach o
 
 Copy the theme files to your website directory.
 
+1) Run `gem install bundler:2.3.13`
+2) Run `bundle exec bundle install`
+3) Run `bundle exec jekyll serve`
+
+No need to follow next step.
 To run the theme locally, navigate to the theme directory in your terminal and run `bundle install` to install the theme's dependencies. Then run `jekyll serve` to start the Jekyll server.
 
 ---
