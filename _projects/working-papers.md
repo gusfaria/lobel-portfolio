@@ -7,10 +7,12 @@ featured_image: '/images/demo/demo-square.jpg'
 byline: "Yello world"
 
 papers:
-    - title: 'ello-world'
-      byline: 'ello-world'
+    - title: "Intra-household Inequality and the Joint Taxation of Household Earnings"
+      byline: "with Cassiano Alves, Carlos da Costa and Humberto Moreira"
+      status: Revise and Resubmit
+      journal: Journal of Public Economics
+      date: Jul 2022
       thumbnail: ./images/demo/demo-landscape.jpg
-      foo: 'dlksajnlkdjad'
       external_url: http://www.google.com
       excerpt: Lorem Ipsum is simply dummy text of the printing and typesetting industry. Lorem Ipsum has been the industry's standard dummy text ever since the 1500s, when an unknown printer took a galley of type and scrambled it to make a type specimen book. It has survived not only five centuries, but also the leap into electronic typesetting, remaining essentially unchanged. It was popularised in the 1960s with the release of Letraset sheets containing Lorem Ipsum passages, and more recently with desktop publishing software like Aldus PageMaker including versions of Lorem Ipsum.
 

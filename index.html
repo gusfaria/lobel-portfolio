@@ -27,14 +27,20 @@ featured_image: /images/demo/demo-landscape.jpg
 	<div class="wrap">
 		{% for research in site.projects %}
 			<div id="{{research.slug}}" class="slide">
-				<h1>{{ research.title }}</h1>
+				<h2 class="section-title">{{ research.title }}</h2>
 
 				{% for paper in research.papers %}
 					<article class="proj-card">
 						<header class="proj-card__item proj-head">
 							<div class="proj-head__eyebrows">
-								<div class="proj-label">Published</div>
-								<div class="proj-label proj-label--light">Microeconomics</div>
+								<div class="proj-label">
+									{% if research.slug == 'working-papers' %}
+										Working Papers
+									{% else if research.slug == 'work-in-progress' %}
+										Work in work-in-progress
+									{% endif %}
+								</div>
+								<!-- <div class="proj-label proj-label--light">Microeconomics</div> -->
 							</div>
 
 							<h2 class="proj-head__title">
@@ -46,9 +52,12 @@ featured_image: /images/demo/demo-landscape.jpg
 									{{ paper.byline }}
 								</p>
 
+								{% if paper.journal %}
 								<p class="proj-meta__item proj-publication">
-									<b>THE ECONOMIST</b> | November 24, 2018
+									{% if paper.status %}{{ paper.status }}, {% endif %}<b>{{ paper.journal }}</b>{% if paper.date %}, {{ paper.date }}{% endif %}
 								</p>
+								{% endif %}
+
 							</div>
 						</header>
 
@@ -57,15 +66,17 @@ featured_image: /images/demo/demo-landscape.jpg
 						</figure>
 
 						<div proj-card__item >
+							{% if paper.excerpt %}
 							<div class="proj-excerpt">
-								<p>{{ paper.excerpt }}</p>
+								<p><span>Abstract:</span> {{ paper.excerpt }}</p>
 							</div>
+							{% endif %}
 
-							<ul class="proj-links">
+							<!-- <ul class="proj-links">
 								<li class="proj-link__item"><a class="" href="#" target="_blank">Project version</a></li>
 								<li class="proj-link__item"><a class="" href="#" target="_blank">Appendix</a></li>
 								<li class="proj-link__item"><a class="" href="#" target="_blank">Replication code</a></li>
-							</ul>
+							</ul> -->
 					</article>
 				{% endfor %}
 			</div>
