@@ -6,11 +6,16 @@ If you have any questions or feedback about the theme, don't hesitate to reach o
 
 ## Getting started
 
-Copy the theme files to your website directory.
+* Copy the theme files to your website directory.
+* Install Homebrew and Ruby (recommend installing chruby as your ruby version manager)
+* Install ruby-version 2.7.6
 
+
+0) make sure you are using `ruby-install 2.7.6`
 1) Run `gem install bundler:2.3.13`
 2) Run `bundle exec bundle install`
 3) Run `bundle exec jekyll serve`
+4) Open page on `http://127.0.0.1:4000/lobel-portfolio/`
 
 No need to follow next step.
 To run the theme locally, navigate to the theme directory in your terminal and run `bundle install` to install the theme's dependencies. Then run `jekyll serve` to start the Jekyll server.
