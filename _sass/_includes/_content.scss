@@ -21,7 +21,7 @@
 	}
 
 	@include mq(laptop) {
-		padding: 53px 60px 0;
+		padding: 53px 0 0;
 	}
 
 	.wrap {
@@ -35,7 +35,7 @@
 		}
 
 		@include mq(desktop) {
-			max-width: 70%;
+			max-width: 100%;
 		}
 	}
 
@@ -50,6 +50,19 @@
 		margin-top: 5px;
 		color: $text-light-color;
 	}
+}
+
+.author-info {
+	list-style: none;
+
+}
+
+// .author-info__item {
+// 	font-weight: bold;
+// }
+
+.author-info__item > a:hover {
+	font-weight: bold;
 }
 
 .single {
@@ -85,7 +98,7 @@
 		}
 
 		@include mq(desktop) {
-			max-width: 70%;
+			max-width: 100%;
 		}
 	}
 
